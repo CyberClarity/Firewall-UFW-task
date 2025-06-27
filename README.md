@@ -32,20 +32,28 @@ sudo ufw status numbered
 sudo ufw deny in 23
 ```
 
-5. Verify the Block Rule is Applied:
-```bash
-sudo ufw status numbered
-```
-
-6.Allow SSH on Port 22:
+5. Allow SSH on Port 22:
 ```bash
 sudo ufw allow in 22
 ```
 
-7.Test Connection to Blocked Port 23
+6. Verify the Block Rule is Applied:
+```bash
+sudo ufw status numbered
+```
+![Description of the screenshot](https://github.com/CyberClarity/Firewall-UFW-task/blob/main/status.jpeg)
+
+7. Test Connection to Blocked Port 23
 ```bash
 telnet localhost 23
 ```
+![Description of the screenshot](https://github.com/CyberClarity/Firewall-UFW-task/blob/main/telnet.jpeg)
+
+8. Test Connection to Blocked Port 22
+```bash
+ssh localhost 22
+```
+![Description of the screenshot](https://github.com/CyberClarity/Firewall-UFW-task/blob/main/ssh.jpeg)
 
 # Remove the Test Block Rule to Restore Original State
 
