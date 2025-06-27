@@ -5,16 +5,8 @@ Configure and test basic firewall rules to allow or block traffic using UFW on L
 
 ---
 
-## ✅ Steps Completed
+## Prerequisites
 
-### 1️⃣ Installed UFW
+### 1. Update Package Lists
 ```bash
 sudo apt update
-sudo apt install ufw
-
----
-
-### 2️⃣ Enabled UFW
-```bash
-sudo ufw enable
-
